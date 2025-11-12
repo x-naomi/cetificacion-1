@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taco Palace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1><span class="orange">Taco</span>Palace</h1>
+    </div>
+    <div class="user-actions">
+      <input type="email" id="email" placeholder="email">
+      <button id="login">Login</button>
+      <div class="cart">🛒 <span id="cart-count">0</span></div>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="#">Enchiladas</a>
+    <a href="#">Tacos</a>
+    <a href="#">Flautas</a>
+    <a href="#">Gorditas</a>
+    <a href="#">Tostadas</a>
+    <a href="#">Enfrijoladas</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>La mejor variedad en platillos de comida mexicana</h2>
+      <p>Contamos con <a href="#">servicio a domicilio</a></p>
+      <img id="main-img" src="https://images.unsplash.com/photo-1604908177522-0f9d5a4f2d3b?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b57d4b3f3b1f9e3a0a3f1a9b6a4b6c2" alt="Comida mexicana">
+    </section>
+
+    <!-- Carrusel de imágenes: flujo continuo (duplicamos el conjunto para crear loop seamless) -->
+    <section class="carousel" aria-label="Galería de platillos">
+      <div class="carousel-track">
+        <!-- conjunto base -->
+        <img src="https://images.unsplash.com/photo-1604908177522-0f9d5a4f2d3b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b57d4b3f3b1f9e3a0a3f1a9b6a4b6c2" alt="Platillo 1">
+        <img src="https://images.unsplash.com/photo-1547592166-3a5f3c9f2d9f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7g8h" alt="Platillo 2">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcdef1234567890" alt="Platillo 3">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1122334455667788" alt="Platillo 4">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=a1b2c3d4e5f6g7h8" alt="Platillo 5">
+        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9988776655443322" alt="Platillo 6">
+        <!-- duplicado para loop -->
+        <img src="https://images.unsplash.com/photo-1604908177522-0f9d5a4f2d3b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b57d4b3f3b1f9e3a0a3f1a9b6a4b6c2" alt="Platillo 1">
+        <img src="https://images.unsplash.com/photo-1547592166-3a5f3c9f2d9f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7g8h" alt="Platillo 2">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcdef1234567890" alt="Platillo 3">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1122334455667788" alt="Platillo 4">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=a1b2c3d4e5f6g7h8" alt="Platillo 5">
+        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9988776655443322" alt="Platillo 6">
+      </div>
+    </section>
+
+    <aside class="recomendados">
+      <h3>Recomendados:</h3>
+      <div class="producto">
+        <img src="https://www.paulinacocina.net/wp-content/uploads/2020/01/untitled-copy.jpg" alt="Orden de tacos">
+        <p><strong>Orden de Tacos</strong></p>
+        <a href="#">Ver más...</a>
+        <button class="add-cart">+</button>
+      </div>
+      <div class="producto">
+        <img src="https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-9baa5ce/www.goya.com/wp-content/uploads/2023/10/chicken-flautas.jpg" alt="Orden de flautas">
+        <p><strong>Orden de Flautas</strong></p>
+        <a href="#">Ver más...</a>
+        <button class="add-cart">+</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
